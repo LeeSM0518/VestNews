@@ -1,0 +1,44 @@
+### 네이버 경제 뉴스
+GET https://news.naver.com/section/template/SECTION_ARTICLE_LIST_FOR_LATEST?sid=101&sid2=258
+
+### 네이버 경제 뉴스 페이지 조회 (2)
+GET https://news.naver.com/section/template/SECTION_ARTICLE_LIST_FOR_LATEST?sid=101&sid2=258&cluid=&pageNo=2&next=2024121918231310097
+
+### 네이버 경제 뉴스 페이지 조회 (3) - 2024 12 19 17 26 12 85033
+GET https://news.naver.com/section/template/SECTION_ARTICLE_LIST_FOR_LATEST?sid=101&sid2=258&cluid=&pageNo=3next=2024121917261285033
+
+### 매일 경제 뉴스 (1 페이지)
+GET https://www.mk.co.kr/news/stock/latest
+
+### 매일 경제 뉴스 (2 페이지)
+GET https://www.mk.co.kr/_CP/42?page=2&lang=null&lcode=stock&scode=latest&date=null&category=null&mediaCode=null&sort=null&userNo=null&ga_category=data-category_1depth%3D%7C%EB%89%B4%EC%8A%A4%7C%20data-category_2depth%3D%7C%EC%A6%9D%EA%B6%8C%7C%20data-category_3depth%3D%7C%EC%B5%9C%EC%8B%A0%EB%89%B4%EC%8A%A4%7C%20%20data-section%3D%7C%EC%B5%9C%EC%8B%A0%EA%B8%B0%EC%82%AC%7C
+
+### 한국 경제 (1 페이지)
+GET https://www.hankyung.com/financial-market
+
+### 한국 경제 (2 페이지)
+GET https://www.hankyung.com/financial-market?page=2
+
+### 연합 뉴스 (1 페이지)
+GET https://www.yna.co.kr/economy/finance/1
+
+### 연합 뉴스 (2 페이지)
+GET https://www.yna.co.kr/economy/finance/2
+
+### 조선 일보 (1 페이지)
+GET https://www.chosun.com/economy
+
+### 조선 일보 (2 페이지)
+GET https://www.chosun.com/pf/api/v3/content/fetch/story-feed?query=%7B%22excludeContentTypes%22%3A%22video%22%2C%22excludeDistributorNames%22%3A%22Waiker%22%2C%22includeContentTypes%22%3A%22story%22%2C%22includeSections%22%3A%22%2Feconomy%22%2C%22offset%22%3A0%2C%22size%22%3A10%7D&filter=%7Bcontent_elements%7B_id%2Ccanonical_url%2Ccredits%7Bby%7B_id%2Cadditional_properties%7Boriginal%7Baffiliations%2Cbyline%7D%7D%2Cname%2Corg%2Curl%7D%7D%2Cdescription%7Bbasic%7D%2Cdisplay_date%2Cheadlines%7Bbasic%2Cmobile%7D%2Clast_updated_date%2Cliveblogging_content%7Bbasic%7Bdate%2Cheadline%2Cid%2Curl%2Cwebsite%7D%7D%2Cpromo_items%7Bbasic%7B_id%2Cadditional_properties%7Bfocal_point%7Bmax%2Cmin%7D%7D%2Calt_text%2Ccaption%2Ccontent%2Ccontent_elements%7B_id%2Calignment%2Calt_text%2Ccaption%2Ccontent%2Ccredits%7Baffiliation%7Bname%7D%2Cby%7B_id%2Cbyline%2Cname%2Corg%7D%7D%2Cheight%2CresizedUrls%7B16x9_lg%2C16x9_md%2C16x9_sm%2C16x9_xxl%2C4x3_lg%2C4x3_md%2C4x3_sm%2C4x3_xxl%7D%2Csubtype%2Ctype%2Curl%2Cwidth%7D%2Ccredits%7Baffiliation%7Bbyline%2Cname%7D%2Cby%7Bbyline%2Cname%7D%7D%2Cdescription%7Bbasic%7D%2Cembed_html%2Cfocal_point%7Bx%2Cy%7D%2Cheadlines%7Bbasic%7D%2Cheight%2Cpromo_items%7Bbasic%7B_id%2Cheight%2CresizedUrls%7B16x9_lg%2C16x9_md%2C16x9_sm%2C16x9_xxl%2C4x3_lg%2C4x3_md%2C4x3_sm%2C4x3_xxl%7D%2Csubtype%2Ctype%2Curl%2Cwidth%7D%7D%2CresizedUrls%7B16x9_lg%2C16x9_md%2C16x9_sm%2C16x9_xxl%2C4x3_lg%2C4x3_md%2C4x3_sm%2C4x3_xxl%7D%2Cstreams%7Bheight%2Cwidth%7D%2Csubtype%2Ctype%2Curl%2Cwebsites%2Cwidth%7D%2Clead_art%7Bduration%2Ctype%7D%7D%2Crelated_content%7Bbasic%7B_id%2Cabsolute_canonical_url%2Cheadlines%7Bbasic%2Cmobile%7D%2Creferent%7Bid%2Ctype%7D%2Ctype%7D%7D%2Csubtype%2Ctaxonomy%7Bprimary_section%7B_id%2Cname%7D%2Ctags%7Bslug%2Ctext%7D%7D%2Ctype%2Cwebsite_url%7D%2Ccount%2Cnext%7D&d=1780&_website=chosun
+
+### 조선 일보 상세 페이지
+GET https://m.sedaily.com/RankAll/GA/20241220/1
+
+### 서울 경제 (경제/금융 1 페이지)
+GET https://m.sedaily.com/RankAll/GA/20241219/1
+
+### 서울 경제 (존재하지 않는 페이지)
+GET https://m.sedaily.com/RankAll/GA/20241219/7
+
+### 서울 경제 (국제 1 페이지)
+GET https://m.sedaily.com/RankAll/GF/20241219/1

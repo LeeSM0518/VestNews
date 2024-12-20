@@ -17,12 +17,16 @@ java {
 
 repositories {
     mavenCentral()
+    maven("https://repo.spring.io/snapshot")
 }
 
 dependencies {
     // spring
     implementation("org.springframework.boot:spring-boot-starter-webflux")
     implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
+
+    // spring ai
+    implementation("org.springframework.ai:spring-ai-openai-spring-boot-starter:1.0.0-SNAPSHOT")
 
     // kotlin
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
@@ -44,7 +48,15 @@ dependencies {
     // crawling
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
     implementation("org.jsoup:jsoup:1.18.3")
+
+    // test container
+    testImplementation("org.testcontainers:testcontainers-bom:1.20.4")
+    testImplementation("org.testcontainers:testcontainers")
+    testImplementation("org.testcontainers:r2dbc")
+    testImplementation("org.testcontainers:postgresql")
+    testImplementation("org.testcontainers:junit-jupiter")
 }
+
 
 kotlin {
     compilerOptions {
