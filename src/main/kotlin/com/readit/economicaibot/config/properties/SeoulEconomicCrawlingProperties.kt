@@ -6,4 +6,5 @@ import org.springframework.boot.context.properties.ConfigurationProperties
 data class SeoulEconomicCrawlingProperties(
     val financeUrl: String,
     val internationalUrl: String,
+    val certificateUrl: String,
 )

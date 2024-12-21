@@ -30,6 +30,7 @@ class SeoulEconomicCrawler(
 
     private val financeClient = CrawlingClient(properties.financeUrl)
     private val internationalClient = CrawlingClient(properties.internationalUrl)
+    private val certificateClient = CrawlingClient(properties.certificateUrl)
 
     private val timezone = ZoneId.of("Asia/Seoul")
     private val instantFormatter = DateTimeFormatter.ofPattern("yyyyMMdd").withZone(timezone)
@@ -39,7 +40,8 @@ class SeoulEconomicCrawler(
         val formattedDate = instantFormatter.format(date)
         listOf(
             async { crawling(financeClient, formattedDate).toList() },
-            async { crawling(internationalClient, formattedDate).toList() }
+            async { crawling(internationalClient, formattedDate).toList() },
+            async { crawling(certificateClient, formattedDate).toList() }
         ).awaitAll().flatten()
     }
 
@@ -47,7 +49,7 @@ class SeoulEconomicCrawler(
         crawlingClient: CrawlingClient,
         formattedDate: String?,
     ): Flow<News> =
-        (1..5)
+        (1..2)
             .asFlow()
             .map { async(Dispatchers.IO) { extractSimpleNews(crawlingClient.getDocument("$formattedDate/$it")) } }
             .buffer()
@@ -85,4 +87,5 @@ class SeoulEconomicCrawler(
                 val link = element.attr("href").trim()
                 Triple(title, date, link)
             }
+
 }
