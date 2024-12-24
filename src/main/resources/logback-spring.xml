@@ -2,7 +2,7 @@
 <configuration>
 
     <conversionRule conversionWord="coloredLevel"
-                    converterClass="com.readit.economicaibot.config.log.CustomLevelColorConverter"/>
+                    converterClass="com.readit.vestnews.config.log.CustomLevelColorConverter"/>
 
     <property name="LOGS" value="./logs"/>
 

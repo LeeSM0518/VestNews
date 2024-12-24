@@ -1,1 +1,1 @@
-rootProject.name = "economic-ai-bot"
+rootProject.name = "vestnews"
